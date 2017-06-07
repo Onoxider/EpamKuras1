@@ -10,8 +10,10 @@ public class Main {
     public static void main(String[] args)  {
 
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+            System.out.println("Введите значение эпсилон");
             Double e = Double.parseDouble(br.readLine());
         } catch (IOException e) {
+            e.printStackTrace();
         }
 
 
