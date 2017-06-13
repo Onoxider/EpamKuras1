@@ -22,16 +22,25 @@ public class Notebook {
 
     ArrayList<Record> records = new ArrayList<>();
 
+
     public void viewAllRecords() {
         for (Record record : records) {
             System.out.println(record);
         }
     }
 
+    /**
+     *
+     * @param record - новая запись, объект класса Record
+     */
     public void addRecord(Record record) {
         records.add(record);
     }
 
+    /**
+     *
+     * @param id - идентификатор записи
+     */
     public void removeRecord(int id) {
         records.remove(id-1);
     }
