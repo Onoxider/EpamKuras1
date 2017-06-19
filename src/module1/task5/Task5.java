@@ -10,13 +10,11 @@ import java.io.InputStreamReader;
 public class Task5 {
     public static void main(String[] args) {
 
-        int a, b, h;
-        a = b = h = 0;
+        int a = 0;
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
             System.out.println("Введите размерность матрицы:");
             a = Integer.parseInt(br.readLine());
-            //   b = Double.parseDouble(br.readLine());
-            //  h = Double.parseDouble(br.readLine());
+
         } catch (IOException ex) {
         }
 
